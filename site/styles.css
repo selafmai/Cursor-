@@ -83,6 +83,7 @@ body {
   flex: 1;
 }
 .topbar-meta, .topbar-actions { display: flex; align-items: center; gap: 10px; }
+[hidden] { display: none !important; }
 .pill {
   font-size: 11px;
   letter-spacing: 0.08em;

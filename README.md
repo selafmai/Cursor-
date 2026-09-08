@@ -8,7 +8,7 @@ Make a **documentation-first AI workspace** for builders and the agents that imp
 
 The writing tool is published at:
 
-https://slush.here.now/
+https://slush.royal-studio.here.now/
 
 ## Start here (docs)
 

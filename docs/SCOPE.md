@@ -28,7 +28,7 @@ Concrete deliverables. If it is not in this list, do not build it now.
 5. **Tech spec DRAFT** — architecture sketch, directory layout, capabilities, work units with Verify
 6. **Orchestration DRAFT** — from-scratch control loop, rules, tools, HITL, bootstrap
 7. **Root README pointer** — status + how to start a harness session
-8. **Slush writing tool** — static SPA in `site/` that turns the playbook into a guided writer and markdown export, published at `slush.here.now`
+8. **Slush writing tool** — static SPA in `site/` that turns the playbook into a guided writer and markdown export, published at `https://slush.royal-studio.here.now/`
 
 ---
 
