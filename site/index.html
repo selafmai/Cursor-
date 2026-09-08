@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Slush — Tech spec writing tool</title>
+  <meta name="description" content="Write a harness-ready DRAFT pack: PRD, scope, tech spec, and orchestration. Then vibe-code one verified work unit at a time." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231c1b19'/%3E%3Cpath d='M8 21.5V10.5h3.2c2.6 0 4.1 1.3 4.1 3.4 0 1.4-.7 2.5-1.9 3l2.3 4.6h-2.5l-2-4.1H10.4V21.5H8zm2.4-6.2h.9c1.1 0 1.8-.6 1.8-1.5s-.7-1.5-1.8-1.5h-.9v3zM18.2 21.5V10.5h6.6v2h-4.2v2.4h3.8v2h-3.8v4.6h-2.4z' fill='%23f4f1ea'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div id="app" class="app">
+    <header class="topbar">
+      <a class="brand" href="#/" aria-label="Slush home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-name">Slush</span>
+      </a>
+      <p class="topbar-kicker">Tech spec writing tool</p>
+      <div class="topbar-meta" id="top-meta" hidden>
+        <span class="pill" id="status-pill">DRAFT</span>
+        <span class="completeness" aria-live="polite">
+          <span class="completeness-ring" id="completeness-ring"></span>
+          <span id="completeness-label">0% ready</span>
+        </span>
+      </div>
+      <div class="topbar-actions" id="top-actions" hidden>
+        <label class="mobile-jump">
+          <span class="sr-only">Document</span>
+          <select id="mobile-nav" aria-label="Jump to document">
+            <option value="#/write/overview">Overview</option>
+            <option value="#/write/prd">PRD</option>
+            <option value="#/write/scope">Scope</option>
+            <option value="#/write/spec">Tech spec</option>
+            <option value="#/write/orch">Orchestration</option>
+            <option value="#/write/units">Work units</option>
+            <option value="#/export">Export</option>
+          </select>
+        </label>
+        <button type="button" class="btn ghost" id="btn-guide" aria-pressed="true">Guide</button>
+        <button type="button" class="btn ghost" id="btn-outline" aria-pressed="false">Outline</button>
+        <a class="btn solid" href="#/export">Export</a>
+      </div>
+    </header>
+
+    <div class="shell" id="shell">
+      <nav class="rail" id="rail" aria-label="Documents" hidden>
+        <p class="rail-label">Pack</p>
+        <a href="#/write/overview">Overview</a>
+        <a href="#/write/prd">PRD</a>
+        <a href="#/write/scope">Scope</a>
+        <a href="#/write/spec">Tech spec</a>
+        <a href="#/write/orch">Orchestration</a>
+        <a href="#/write/units">Work units</a>
+        <a href="#/export">Export</a>
+      </nav>
+
+      <main id="main" class="main" tabindex="-1"></main>
+
+      <aside class="aside" id="aside" aria-label="Must-have checklist" hidden></aside>
+    </div>
+  </div>
+
+  <script src="./schema.js"></script>
+  <script src="./export.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
