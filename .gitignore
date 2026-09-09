@@ -1,0 +1,8 @@
+.herenow/
+site/.herenow/
+.DS_Store
+node_modules/
+*.pem
+.env
+.env.*
+!/.env.example

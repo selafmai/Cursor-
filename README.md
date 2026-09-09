@@ -1,12 +1,26 @@
 # Cursor Cloud Agents
 
-**Status:** 🟡 DRAFT — documentation-first harness. No application runtime in this milestone.
+**Status:** 🟡 DRAFT — documentation pack plus **Slush**, a tech spec writing tool.
 
 Make a **documentation-first AI workspace** for builders and the agents that implement for them, so they ship the right system without silent scope invention, by keeping PRD + scope + tech spec + orchestration as an **executable harness**.
 
-## Start here
+## Live
+
+The writing tool is published at:
+
+https://slush.royal-studio.here.now/
+
+## Start here (docs)
 
 Read **[docs/README.md](./docs/README.md)** in order (playbook → PRD → scope → tech spec → orchestration).
+
+## Writing tool (`site/`)
+
+Static SPA: guided DRAFT writer, must-have completeness, work units with Verify, markdown export. Open `site/index.html` locally or serve `site/`.
+
+```bash
+python3 -m http.server 8787 --directory site
+```
 
 ## Harness session (copy/paste)
 
@@ -19,13 +33,3 @@ If you hit [DRAFT — resolve], record an assumption; do not invent a locked dec
 ```
 
 Pin: `@docs/PRD.md` `@docs/SCOPE.md` `@docs/TECH-SPEC.md` `@docs/ORCHESTRATION.md`
-
-## What this repo is (now)
-
-- Product intent, boundaries, and a step-by-step implementation spec
-- Orchestration architecture you can stand up from an empty git repo
-- Open questions numbered in `docs/PRD.md` (do not treat them as locked)
-
-## What this repo is not (yet)
-
-Application UI, auth, billing, and production infrastructure are **out of scope**. See `docs/SCOPE.md`.

@@ -13,7 +13,7 @@
 
 ## 1) One-line boundary
 
-**This milestone delivers a complete DRAFT documentation pack that functions as an implementation harness.** It does not deliver an application, a control-plane UI, billing, or a running multi-agent mesh.
+**This milestone delivers a complete DRAFT documentation pack plus Slush, a static tech spec writing tool.** It does not deliver a control-plane UI, billing, or a running multi-agent mesh.
 
 ---
 
@@ -28,6 +28,7 @@ Concrete deliverables. If it is not in this list, do not build it now.
 5. **Tech spec DRAFT** — architecture sketch, directory layout, capabilities, work units with Verify
 6. **Orchestration DRAFT** — from-scratch control loop, rules, tools, HITL, bootstrap
 7. **Root README pointer** — status + how to start a harness session
+8. **Slush writing tool** — static SPA in `site/` that turns the playbook into a guided writer and markdown export, published at `https://slush.royal-studio.here.now/`
 
 ---
 
@@ -35,8 +36,8 @@ Concrete deliverables. If it is not in this list, do not build it now.
 
 Do **not** implement even if it is easy or “the agent already knows how.”
 
-1. **Application UI / product screens** — no Next.js app, no design-system implementation
-2. **Production infrastructure** — no Terraform, k8s, multi-region, paid cloud resources
+1. **Application UI / product screens** — no Next.js app, no design-system implementation (Slush is a static writer, not a product control plane)
+2. **Production infrastructure** — no Terraform, k8s, multi-region, paid cloud resources (here.now static hosting is allowed)
 3. **Identity & billing** — no OAuth, SSO, Stripe, subscription tiers
 4. **Model training / fine-tunes** — no company-data training pipelines
 5. **Secretful examples** — no real API keys, tokens, or customer data in docs
@@ -131,6 +132,7 @@ Phases are **entry/exit criteria**. Do not start phase N+1 until exit(N) is true
 | 2026-09-08 | Unknowns are Q-ids, not fake Locked numbers | Trust | Q3 stack is not secretly Next.js until assumed at code start |
 | 2026-09-08 | Mermaid + tables, not images, for architecture | GitHub-native, agent-readable | No binary design dumps required for v0 |
 | 2026-09-08 | English-only `[assumption]` | Unblock DRAFT | Q15 may add SL later |
+| 2026-09-08 | Static Slush writer on here.now slug `slush` | User asked for a tech spec writing tool with modern-minimal UI | Persistence is localStorage; no accounts |
 
 ---
 
