@@ -78,27 +78,31 @@ Detailed runtime loop: **[ORCHESTRATION.md](./ORCHESTRATION.md)**.
 ```text
 /
 ├── README.md
-└── docs/
-    ├── README.md
-    ├── PLAYBOOK.md
-    ├── PRD.md
-    ├── SCOPE.md
-    ├── TECH-SPEC.md
-    └── ORCHESTRATION.md
+├── COMPANY.md
+├── CLAUDE.md
+├── DECISIONS.md
+├── ACTIVITY.md
+├── docs/
+├── site/
+├── inbox/
+├── calls/
+├── knowledge/
+│   ├── INDEX.md
+│   ├── _provisional.md
+│   └── _graveyard.md
+├── logs/
+├── workspaces/
+├── skills/
+├── scripts/
+├── hooks/
+└── .cursor/rules/always/company-os.mdc
 ```
+
+Company OS is in-scope item 9 (SCOPE). Product specs remain `docs/`. Writing tool remains `site/`.
 
 ### 5.2 After harness bootstrap (Phase 1 — WU-003)
 
-```text
-/
-├── .cursor/rules/
-│   ├── always/
-│   ├── auto-attached/
-│   ├── agent-requested/
-│   └── manual/
-├── .gitignore
-└── docs/ …
-```
+Always-rule `company-os.mdc` is present. Additional always-rules (secrets, WU discipline) may still be added as WU-003.
 
 ### 5.3 After first vertical slice (Phase 2 — do not create until Q3)
 

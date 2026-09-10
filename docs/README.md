@@ -7,6 +7,8 @@
 
 This pack is the **source of truth** for what we are building, what we are not building, how the system is orchestrated, and how an agent should implement work **one verified slice at a time**.
 
+Company memory (inbox, knowledge, decisions, logs) lives beside this pack — see [COMPANY.md](../COMPANY.md) and [CLAUDE.md](../CLAUDE.md). Do not copy the PRD into `knowledge/`.
+
 ---
 
 ## How to read this pack

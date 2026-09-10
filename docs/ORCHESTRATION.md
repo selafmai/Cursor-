@@ -56,13 +56,14 @@ Orchestration is a loop, not a prompt. Every session MUST follow these phases. S
 
 Pull only what the WU pins. Typical pack:
 
-1. `docs/TECH-SPEC.md` (the WU)
-2. `docs/SCOPE.md` (still allowed?)
-3. `docs/PRD.md` (intent, if the WU touches a story)
-4. File paths listed on the WU
-5. Matching `.cursor/rules/` (always + glob)
+1. `CLAUDE.md` + `knowledge/INDEX.md` (company memory — every session)
+2. `docs/TECH-SPEC.md` (the WU)
+3. `docs/SCOPE.md` (still allowed?)
+4. `docs/PRD.md` (intent, if the WU touches a story)
+5. File paths listed on the WU
+6. Matching `.cursor/rules/` (always + glob)
 
-Do not dump the whole repo into context “for luck.”
+Do not dump the whole repo into context “for luck.” File new facts into `knowledge/` before the session ends (`skills/close-session`).
 
 ### 2.3 Reason & plan
 
