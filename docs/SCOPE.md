@@ -13,7 +13,7 @@
 
 ## 1) One-line boundary
 
-**This milestone delivers a complete DRAFT documentation pack plus Slush, a static tech spec writing tool.** It does not deliver a control-plane UI, billing, or a running multi-agent mesh.
+**This milestone delivers a DRAFT documentation pack, Slush, and a five-part company OS in git.** It does not deliver a control-plane UI, billing, or a running multi-agent mesh.
 
 ---
 
@@ -29,6 +29,7 @@ Concrete deliverables. If it is not in this list, do not build it now.
 6. **Orchestration DRAFT** — from-scratch control loop, rules, tools, HITL, bootstrap
 7. **Root README pointer** — status + how to start a harness session
 8. **Slush writing tool** — static SPA in `site/` that turns the playbook into a guided writer and markdown export, published at `https://slush.royal-studio.here.now/`
+9. **Company OS** — five-part git memory: `inbox/` `calls/` `knowledge/` (INDEX, provisional, graveyard) `DECISIONS.md` `ACTIVITY.md` `logs/` `workspaces/` `CLAUDE.md` `skills/` `scripts/` `hooks/`
 
 ---
 
@@ -133,6 +134,7 @@ Phases are **entry/exit criteria**. Do not start phase N+1 until exit(N) is true
 | 2026-09-08 | Mermaid + tables, not images, for architecture | GitHub-native, agent-readable | No binary design dumps required for v0 |
 | 2026-09-08 | English-only `[assumption]` | Unblock DRAFT | Q15 may add SL later |
 | 2026-09-08 | Static Slush writer on here.now slug `slush` | User asked for a tech spec writing tool with modern-minimal UI | Persistence is localStorage; no accounts |
+| 2026-09-10 | Five-part company OS in git | “A smarter company every day” | Memory compounds in-repo; see D-007 |
 
 ---
 

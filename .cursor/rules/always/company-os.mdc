@@ -1,0 +1,27 @@
+---
+description: Company OS — git is memory; follow CLAUDE.md and the knowledge index
+alwaysApply: true
+---
+
+# Company OS
+
+## Purpose
+Keep this repo a company that compounds. Chat is not memory.
+
+## Standards
+### Do
+- Read `CLAUDE.md` and `knowledge/INDEX.md` at session start
+- File facts, decisions, and session logs before claiming done (`skills/close-session`)
+- Put doubt in `knowledge/_provisional.md` and disproof in `knowledge/_graveyard.md`
+- Keep product requirements in `docs/` (one fact, one home)
+
+### Don't
+- Silent-delete a wrong fact
+- Commit secrets or unredacted PII
+- Treat `workspaces/` scratch as Locked
+- Duplicate the PRD into `knowledge/`
+
+## References
+- `CLAUDE.md`
+- `COMPANY.md`
+- `DECISIONS.md`
