@@ -1,6 +1,18 @@
 # Cursor Cloud Agents
 
-**Status:** 🟡 DRAFT — documentation-first harness. No application runtime in this milestone.
+**Status:** Workfit assessment app lives in [`app/`](./app/). Documentation harness remains in `docs/`.
+
+## Workfit (run this)
+
+Assessment-as-ideation for incumbent enterprises. Maps a job to the July 2026 Future of Work Hype Cycle and scores it on the Evaluating AI Opportunities matrix.
+
+```bash
+cd app
+npm install
+npm run dev
+```
+
+Open http://127.0.0.1:5173
 
 Make a **documentation-first AI workspace** for builders and the agents that implement for them, so they ship the right system without silent scope invention, by keeping PRD + scope + tech spec + orchestration as an **executable harness**.
 
